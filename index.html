@@ -3,15 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/card.css">
     <title>Card Gen</title>
 </head>
 <body>
-    <h1>hallo world</h1>
-    <div class="card">
-        <div class="card_name">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script >
+    function screenshot(){
+        html2canvas(document.getElementById('card')).then(function(canvas) {
+            document.body.appendChild(canvas);
+        });
+    }
+    function download (){
+        function saveAs(uri, filename) {
+        var link = document.createElement('a');
+        if (typeof link.download === 'string') {
+            link.href = uri;
+            link.download = filename;
 
+            //Firefox requires the link to be in the body
+            document.body.appendChild(link);
+
+            //simulate click
+            link.click();
+
+            //remove the link when done
+            document.body.removeChild(link);
+
+        } else {
+
+            window.open(uri);
+
+        }
+        }
+        html2canvas(document.getElementById("card")).then(function(canvas) {
+
+        saveAs(canvas.toDataURL(), 'file-name.png');
+        });
+    }   
+    </script>
+    <h1>hallo world</h1>
+    <div id="card" class="card">
+        <div class="card_type">
+            Mana
+            <div>constant</div>
         </div>
-        <img class="card_img" >
+        <div class="card_range">30ft</div>
+        <div class="card_name">
+            <h4>Title</h4>
+        </div>
+        <img class="card_img" src="img/A (((mage))) de 1 (1).png" alt="imige of card" height="200" >
+        <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias doloremque quasi ratione quae dolorum labore</h6>
+        <div class="card_weapon">short shord</div>
     </div>
+    <button id="download-btn" onclick="download()" >download</button>
 </body>
 </html>
