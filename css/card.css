@@ -1,0 +1,63 @@
+:root {
+    --cm-px: 37.7952755906 px
+}
+
+#card {
+    width: 750px;
+    max-width:750px;
+    height:1050px;
+    max-height: 1050px;
+    border: 2px solid black;
+    background-image: url(../img/generic.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.card_type {
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    left:20px;
+}
+
+.card .card_name{
+    font-size: 20px;
+}
+
+.card_range{
+    position: relative ;
+    top: 30px;
+    left: 700px;
+}
+
+.card h4 {
+    text-align: center;
+}
+
+.card .card_img {
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.card .card_img img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.card .text-div{
+    margin: auto;
+    width: 80%;
+    height: 250px;
+    background-image: url(../img/lorem\ text.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    word-wrap: break-word;
+
+}
+.card .text-div h6{
+    margin-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    width:500px;
+}
