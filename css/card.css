@@ -15,9 +15,32 @@
 
 .card_type {
     position: absolute;
+    top: 50px;
+    left:50px;
+    width: 100px;
+    height: 100px;
+    align-items: center; /* Center the content vertically */
     text-align: center;
-    top: 10px;
-    left:20px;
+    background-image: url("../img/action.png");
+    background-size: cover; /* This will make the background image cover the entire div */
+    background-position: center; /* Center the background image */
+}
+.card_type .mana {
+    font-size: large;
+    margin: 0px;
+    line-height: 100px; /* Should match the height of the container */
+    height: 100px; /* Should match the height of the container */
+    vertical-align: middle; /* Center the text vertically */
+    display: inline-block; /* Ensures vertical alignment works */
+    text-align: center;
+}
+
+.card_type img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: -30px;
 }
 
 .card .card_name{
