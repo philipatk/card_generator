@@ -11,14 +11,16 @@
     background-image: url(../img/generic.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    position: relative;
 }
 
 .card_type {
     position: absolute;
-    top: 50px;
+    z-index: 3;
+    top: 150px;
     left:50px;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     align-items: center; /* Center the content vertically */
     text-align: center;
     background-image: url("../img/action.png");
@@ -40,11 +42,21 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    margin-top: -30px;
+    margin-top: -20%;
 }
 
 .card .card_name{
-    font-size: 20px;
+    color: wheat;
+    position: absolute;
+    font-size: 300%;
+    width: 85%;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/name\ tag\ copy.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .card_range{
@@ -69,9 +81,14 @@
     display: block;
 }
 .card .text-div{
-    margin: auto;
-    width: 80%;
-    height: 250px;
+    position: absolute;
+    bottom: 5%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 87%;
+    height: 35%;
     background-image: url(../img/lorem\ text.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
