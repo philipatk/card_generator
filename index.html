@@ -115,7 +115,9 @@
             <p id="mana" class="mana"></p>
             <img id="constantImg" src="img/turn (yellowish).png" alt="turn" height="50px">
         </div>
-        <div class="card_range">30ft</div>
+        <div class="card_range">
+            <span id="range">30fts</span>
+        </div>
         <div class="card_name">
             <h4 id="title">Title</h4>
         </div>
@@ -125,7 +127,7 @@
         <div class="text-div">
             <h6 id="description">Lorem ipsum dolor sit, amet consectetuLorem ipsum dolor sit, amet consecteturLorem ipsum dolor sit, amet consecteturLorem ipsum dolor sit, amet consecteturLorem ipsum dolor sit, amet consecteturr adipisicing elit. Molestias doloremque quasi ratione quae dolorum labore</h6>
         </div>
-        <div class="card_weapon">short shord</div>
+        <div class="card_weapon"> <span id="item">short shord</span> </div>
     </div>
     <button id="download-btn" onclick="download()" >download</button>
     <input type="file" id="imageUpload" accept="image/*">
@@ -136,6 +138,12 @@
     <br>
     <span>Mana:</span>
     <input type="text" id="userMana" oninput="syncText('userMana','mana')">
+    <br>
+    <span>range:</span>
+    <input type="text" id="userRange" oninput="syncText('userRange','range')">
+    <br>
+    <span>item:</span>
+    <input type="text" id="userItem" oninput="syncText('userItem','item')">
     <br>
     <select id="backgroundSelector" onchange="changeBackground()">
         <option value="action">action</option>

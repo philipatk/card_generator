@@ -62,9 +62,19 @@
 }
 
 .card_range{
-    position: relative ;
-    top: 30px;
-    left: 700px;
+    z-index: 5;
+    position: absolute ;
+    display: grid;
+    place-items: center; 
+    width: 100px;
+    height: 100px;
+    top: 15%;
+    right: 7%;
+    background-image: url("../img/circle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: larger;
+    color: white
 }
 
 .card h4 {
@@ -96,6 +106,15 @@
     background-size: 100% 100%;
     word-wrap: break-word;
 
+}
+.card .card_weapon{
+    position: absolute;
+    font-size: larger;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    right: 13%;
+    bottom: 5%;
 }
 .card .text-div h6{
     margin-left: 20px;
