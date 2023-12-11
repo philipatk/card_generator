@@ -2,6 +2,10 @@
     --cm-px: 37.7952755906 px
 }
 
+html {
+    font-family: "Merriweather" ,sans-serif;
+}
+
 #card {
     width: 750px;
     max-width:750px;
